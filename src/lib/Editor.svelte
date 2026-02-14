@@ -17,7 +17,7 @@
     const state = EditorState.create({
       doc: "",
       extensions: [
-        placeholder("this is nimble. \n\nA markdown editor built with svelte and codemirror, meant to be Nimble. \n\nuse ctrl+s to save. \n\njust start typing, this is a placeholder."),
+        placeholder("nimble v0.1. use ctrl+s to save. just start typing, this is a placeholder."),
         keymap.of(defaultKeymap),
         markdown(),
         oneDark,
@@ -36,6 +36,10 @@
             ".cm-gutters": {
                 backgroundColor: "#222226",
                 border: "none"
+            },
+            ".cm-editor": {
+              transform: "none",
+              lineHeight: 1.4
             }
         })
       ]

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Notes
+Comment=A Nimble Markdown App
+Exec=env GDK_BACKEND=x11 nimble
+StartupWMClass=nimble
+Icon=nimble
+Name=nimble
+Terminal=false
+Type=Application
