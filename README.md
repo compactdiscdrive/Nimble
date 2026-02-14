@@ -1,0 +1,1 @@
+Nimble is a fast, distraction-free desktop editor for writing and code, optimized for flow, not features.
