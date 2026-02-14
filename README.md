@@ -1,1 +1,3 @@
-Nimble is a fast, distraction-free desktop editor for writing and code, optimized for flow, not features.
+Nimble - (currently), a fast markdown editor.
+
+press ctrl+s to save.
