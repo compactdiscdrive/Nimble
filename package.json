@@ -1,7 +1,7 @@
 {
 	"name": "nimble",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.2.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -53,6 +53,7 @@
 		"@codemirror/view": "^6.39.13",
 		"@tauri-apps/api": "^2.10.1",
 		"@tauri-apps/cli": "^2.10.0",
+		"@tauri-apps/plugin-fs": "^2.4.5",
 		"@uiw/codemirror-theme-dracula": "^4.25.4",
 		"highlight.js": "^11.11.1",
 		"monaco-editor": "^0.55.1"
