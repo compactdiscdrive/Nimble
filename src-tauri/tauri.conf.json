@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "nimble",
   "mainBinaryName": "nimble",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "identifier": "xyz.beige.nimble",
   "build": {
     "frontendDist": "../build",
@@ -14,8 +14,8 @@
     "windows": [
       {
         "title": "nimble",
-        "width": 1024,
-        "height": 768,
+        "width": 1200,
+        "height": 600,
         "resizable": true,
         "fullscreen": false
       }

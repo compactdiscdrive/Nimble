@@ -27,7 +27,7 @@
   const state = EditorState.create({
     doc: initialContent,
     extensions: [
-      placeholder("nimble v0.2.0 - use ctrl+s to save. just start typing, this is a placeholder."),
+      placeholder("nimble v0.2.1 - use ctrl+s to save (or don't, it autosaves!). just start typing, this is a placeholder."),
       keymap.of(defaultKeymap),
       markdown(),
       oneDark,

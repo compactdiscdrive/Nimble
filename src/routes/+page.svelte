@@ -2,7 +2,7 @@
   import { onMount, onDestroy } from "svelte";
   import { browser } from "$app/environment";
   import Editor from "$lib/Editor.svelte";
-  import { writeTextFile, BaseDirectory, readTextFile, mkdir } from "@tauri-apps/plugin-fs";
+  import { writeTextFile, BaseDirectory, mkdir } from "@tauri-apps/plugin-fs";
 
   let isDirty = false;
   let editorRef: InstanceType<typeof Editor> | undefined;
@@ -39,9 +39,9 @@
   try {
     await mkdir("Nimble", { baseDir: BaseDirectory.Document, recursive: true });
     await writeTextFile(`Nimble/${filename}`, md, { baseDir: BaseDirectory.Document });
-    console.log("saved to", filename);
+    prompt("Filename: ~/Documents/Nimble/", filename);
   } catch (e) {
-    console.error("save failed", e);
+    alert("save failed: " + e);
   }
 }
 
@@ -50,9 +50,8 @@
     const md = editorRef.getMarkdown();
     try {
       await writeTextFile("nimble_temp.md", md, { baseDir: BaseDirectory.AppData });
-      console.log("autosaved");
     } catch (e) {
-      console.error("autosave failed", e);
+      alert("autosave failed: " + e);
     }
   }
 
